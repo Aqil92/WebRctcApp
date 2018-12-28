@@ -6,7 +6,17 @@
     "node-static": "0.7.7",
     "socket.io": "1.2.0"
   },
-"scripts": {
+  "scripts": {
     "start": "node index.js"
-}
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aqil92/WebRctcApp.git"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "license": "MIT"
+
 }
