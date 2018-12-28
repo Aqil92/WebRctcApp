@@ -10,7 +10,7 @@ var options = {
 	cert: fs.readFileSync('cert.pem')
 };
 //
-var fileServer = new(nodeStatic.Server)(https://web-rctc-aqil.herokuapp.com/);
+var fileServer = new(nodeStatic.Server)('https://web-rctc-aqil.herokuapp.com/');
 var app = https.createServer(options,function(req, res) {
   fileServer.serve(req, res);
 
