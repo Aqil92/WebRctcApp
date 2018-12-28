@@ -2,7 +2,7 @@
 
 var os = require('os');
 var nodeStatic = require('node-static');
-var https = require('https');
+var https = require('httpS');
 var socketIO = require('socket.io');
 var fs = require("fs");
 var options = {
@@ -14,7 +14,7 @@ var fileServer = new(nodeStatic.Server)('https://web-rctc-aqil.herokuapp.com/');
 var app = https.createServer(options,function(req, res) {
   fileServer.serve(req, res);
 
-}).listen(process.env.PORT || 5000);
+}).listen(process.env.PORT || 8080);
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
