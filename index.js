@@ -14,7 +14,7 @@ var fileServer = new(nodeStatic.Server)('https://web-rctc-aqil.herokuapp.com/');
 var app = https.createServer(options,function(req, res) {
   fileServer.serve(req, res);
 
-}).listen(rocess.env.PORT || 8080);
+}).listen(process.env.PORT || 8080);
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
